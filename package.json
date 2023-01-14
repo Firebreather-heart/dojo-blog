@@ -12,11 +12,13 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_ENV=production node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch": "json-server db.json --port=8000"
   },
   "eslintConfig": {
     "extends": [
