@@ -12,7 +12,7 @@ const Create = () => {
         const blog = {title, body, author };
         setIsPending(true);
 
-        fetch('http://localhost:8000/blogs', {
+        fetch('https://cute-gray-penguin-vest.cyclic.app/blogs/', {
             method:'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(blog),
